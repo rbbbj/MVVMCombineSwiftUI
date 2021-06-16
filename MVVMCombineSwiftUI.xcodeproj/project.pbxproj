@@ -8,18 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		67C3BD1C26778F1900B45F81 /* MVVMCombineSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C3BD1B26778F1900B45F81 /* MVVMCombineSwiftUIApp.swift */; };
-		67C3BD1E26778F1900B45F81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C3BD1D26778F1900B45F81 /* ContentView.swift */; };
 		67C3BD2026778F1C00B45F81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67C3BD1F26778F1C00B45F81 /* Assets.xcassets */; };
 		67C3BD2326778F1C00B45F81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67C3BD2226778F1C00B45F81 /* Preview Assets.xcassets */; };
+		67C3BD2E2677949300B45F81 /* PostResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C3BD2A2677949300B45F81 /* PostResponse.swift */; };
+		67C3BD2F2677949300B45F81 /* PostsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C3BD2B2677949300B45F81 /* PostsViewModel.swift */; };
+		67C3BD312677949300B45F81 /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C3BD2D2677949300B45F81 /* ItemRow.swift */; };
+		67C3BD33267794C600B45F81 /* PostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C3BD32267794C600B45F81 /* PostsView.swift */; };
+		67C3BD362678E1EF00B45F81 /* JSONPlaceholderFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C3BD352678E1EF00B45F81 /* JSONPlaceholderFetcher.swift */; };
+		67C3BD382678E3DF00B45F81 /* JSONPlaceholderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C3BD372678E3DF00B45F81 /* JSONPlaceholderError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		67C3BD1826778F1900B45F81 /* MVVMCombineSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMCombineSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67C3BD1B26778F1900B45F81 /* MVVMCombineSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMCombineSwiftUIApp.swift; sourceTree = "<group>"; };
-		67C3BD1D26778F1900B45F81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		67C3BD1F26778F1C00B45F81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		67C3BD2226778F1C00B45F81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		67C3BD2426778F1C00B45F81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		67C3BD2A2677949300B45F81 /* PostResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostResponse.swift; sourceTree = "<group>"; };
+		67C3BD2B2677949300B45F81 /* PostsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsViewModel.swift; sourceTree = "<group>"; };
+		67C3BD2D2677949300B45F81 /* ItemRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		67C3BD32267794C600B45F81 /* PostsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsView.swift; sourceTree = "<group>"; };
+		67C3BD352678E1EF00B45F81 /* JSONPlaceholderFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONPlaceholderFetcher.swift; sourceTree = "<group>"; };
+		67C3BD372678E3DF00B45F81 /* JSONPlaceholderError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONPlaceholderError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		67A3C59F267A042400863D89 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				67C3BD2B2677949300B45F81 /* PostsViewModel.swift */,
+				67C3BD32267794C600B45F81 /* PostsView.swift */,
+				67C3BD2D2677949300B45F81 /* ItemRow.swift */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		67A3C5A0267A044B00863D89 /* PostDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PostDetails;
+			sourceTree = "<group>";
+		};
 		67C3BD0F26778F1900B45F81 = {
 			isa = PBXGroup;
 			children = (
@@ -52,10 +79,12 @@
 		67C3BD1A26778F1900B45F81 /* MVVMCombineSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				67A3C59F267A042400863D89 /* Posts */,
+				67A3C5A0267A044B00863D89 /* PostDetails */,
+				67C3BD342677FF3F00B45F81 /* JSONPlaceholderAPI */,
 				67C3BD1B26778F1900B45F81 /* MVVMCombineSwiftUIApp.swift */,
-				67C3BD1D26778F1900B45F81 /* ContentView.swift */,
-				67C3BD1F26778F1C00B45F81 /* Assets.xcassets */,
 				67C3BD2426778F1C00B45F81 /* Info.plist */,
+				67C3BD1F26778F1C00B45F81 /* Assets.xcassets */,
 				67C3BD2126778F1C00B45F81 /* Preview Content */,
 			);
 			path = MVVMCombineSwiftUI;
@@ -67,6 +96,16 @@
 				67C3BD2226778F1C00B45F81 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		67C3BD342677FF3F00B45F81 /* JSONPlaceholderAPI */ = {
+			isa = PBXGroup;
+			children = (
+				67C3BD352678E1EF00B45F81 /* JSONPlaceholderFetcher.swift */,
+				67C3BD2A2677949300B45F81 /* PostResponse.swift */,
+				67C3BD372678E3DF00B45F81 /* JSONPlaceholderError.swift */,
+			);
+			path = JSONPlaceholderAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				67C3BD1E26778F1900B45F81 /* ContentView.swift in Sources */,
+				67C3BD362678E1EF00B45F81 /* JSONPlaceholderFetcher.swift in Sources */,
+				67C3BD2F2677949300B45F81 /* PostsViewModel.swift in Sources */,
+				67C3BD2E2677949300B45F81 /* PostResponse.swift in Sources */,
+				67C3BD33267794C600B45F81 /* PostsView.swift in Sources */,
+				67C3BD312677949300B45F81 /* ItemRow.swift in Sources */,
 				67C3BD1C26778F1900B45F81 /* MVVMCombineSwiftUIApp.swift in Sources */,
+				67C3BD382678E3DF00B45F81 /* JSONPlaceholderError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

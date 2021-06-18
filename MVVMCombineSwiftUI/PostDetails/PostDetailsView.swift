@@ -14,6 +14,8 @@ struct PostDetailsView: View {
         .padding(8)
         .navigationTitle("Details")
         .navigationBarTitleDisplayMode(.inline)
+        
+        Spacer()
     }
 }
 

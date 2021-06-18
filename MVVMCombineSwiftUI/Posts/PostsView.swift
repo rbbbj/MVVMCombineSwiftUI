@@ -2,6 +2,7 @@ import SwiftUI
 
 struct PostsView: View {
     @ObservedObject var viewModel: PostsViewModel
+    
     init(viewModel: PostsViewModel) {
       self.viewModel = viewModel
     }
@@ -10,7 +11,9 @@ struct PostsView: View {
         NavigationView {
             List {
                 ForEach(viewModel.dataSource ) { post in
-                    ItemRow(item: post)
+                    NavigationLink(destination: PostDetailsView(postItem: post)) {
+                        ItemRow(item: post)
+                    }
                 }
             }
             .navigationTitle("Posts")

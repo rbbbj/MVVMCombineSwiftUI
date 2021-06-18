@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		67A3C5A5267CB2D800863D89 /* PostDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A3C5A4267CB2D800863D89 /* PostDetailsView.swift */; };
 		67C3BD1C26778F1900B45F81 /* MVVMCombineSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67C3BD1B26778F1900B45F81 /* MVVMCombineSwiftUIApp.swift */; };
 		67C3BD2026778F1C00B45F81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67C3BD1F26778F1C00B45F81 /* Assets.xcassets */; };
 		67C3BD2326778F1C00B45F81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 67C3BD2226778F1C00B45F81 /* Preview Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		67A3C5A4267CB2D800863D89 /* PostDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsView.swift; sourceTree = "<group>"; };
 		67C3BD1826778F1900B45F81 /* MVVMCombineSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMCombineSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67C3BD1B26778F1900B45F81 /* MVVMCombineSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMCombineSwiftUIApp.swift; sourceTree = "<group>"; };
 		67C3BD1F26778F1C00B45F81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -46,8 +48,8 @@
 		67A3C59F267A042400863D89 /* Posts */ = {
 			isa = PBXGroup;
 			children = (
-				67C3BD2B2677949300B45F81 /* PostsViewModel.swift */,
 				67C3BD32267794C600B45F81 /* PostsView.swift */,
+				67C3BD2B2677949300B45F81 /* PostsViewModel.swift */,
 				67C3BD2D2677949300B45F81 /* ItemRow.swift */,
 			);
 			path = Posts;
@@ -56,6 +58,7 @@
 		67A3C5A0267A044B00863D89 /* PostDetails */ = {
 			isa = PBXGroup;
 			children = (
+				67A3C5A4267CB2D800863D89 /* PostDetailsView.swift */,
 			);
 			path = PostDetails;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				67C3BD312677949300B45F81 /* ItemRow.swift in Sources */,
 				67C3BD1C26778F1900B45F81 /* MVVMCombineSwiftUIApp.swift in Sources */,
 				67C3BD382678E3DF00B45F81 /* JSONPlaceholderError.swift in Sources */,
+				67A3C5A5267CB2D800863D89 /* PostDetailsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
